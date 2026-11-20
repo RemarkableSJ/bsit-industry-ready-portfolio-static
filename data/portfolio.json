@@ -7,12 +7,12 @@
     "location": "Philippines",
     "professionalStatement": "I am a fourth-year BSIT student developing practical skills in IT support, web and mobile application development, and data analysis. I enjoy solving technical problems, building useful systems, and documenting my work clearly. I am seeking an entry-level opportunity where I can support users, contribute to reliable IT operations, and continue learning.",
     "aboutMe": "I am a fourth-year Bachelor of Science in Information Technology student at Datamex College of Saint Adeline. I am building practical experience in web development, databases, data analysis, desktop application development, and IT problem-solving. My projects include Joshua's Studio House Museum, a front-end art gallery and storefront presentation demo with artwork collections, product variants, a browser-local cart, and simulated commission requests. It is designed for presentation only and does not accept real orders or payments. TechZone Mobile Store uses Python, Streamlit, Excel, SQL, and data visualizations to compare smartphone products and support inventory screening. I am also developing Buo, a local-first Python/Kivy fitness application focused on strength logging, training plans, recovery check-ins, reminders, analytics, and private progress tracking. A Windows desktop run setup is included; GPS route capture and Android-specific tracking remain incomplete.\n\nI approach technical work by understanding the problem, breaking it into manageable tasks, testing what I build, and documenting results and limitations. I value continuous learning, responsible handling of information, clear communication, and evidence-based decisions. My current career direction is entry-level IT support and technical support, while continuing to strengthen my development and data skills. I want to contribute to a team, help users solve technology problems, and grow into a dependable IT professional. This portfolio presents my current work honestly: completed deliverables, working prototypes, and areas that still need testing or improvement.",
-    "email": "",
-    "phone": "",
-    "github": "",
-    "linkedin": "",
+    "email": "aremarkablesj@gmail.com",
+    "phone": "09086327632",
+    "github": "https://github.com/RemarkableSJ",
+    "linkedin": "https://www.linkedin.com/in/joshua-decena-748226218/",
     "portfolioUrl": "",
-    "photoUrl": "",
+    "photoUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/images/profile-photo.png",
     "program": "Bachelor of Science in Information Technology (BSIT)",
     "school": "Datamex College of Saint Adeline",
     "section": "",
@@ -386,8 +386,8 @@
   },
   "certificates": [],
   "resume": {
-    "resumeUrl": "",
-    "fileName": "",
+    "resumeUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/files/Joshua_Elevado_Decena_Resume.pdf",
+    "fileName": "Joshua_Elevado_Decena_Resume.pdf",
     "dataUrl": ""
   },
   "checklist": [
