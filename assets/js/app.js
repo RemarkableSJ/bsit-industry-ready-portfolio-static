@@ -448,11 +448,110 @@
     $('#reflectionContent').innerHTML = `<div class="reflection-card"><div class="section-intro-row"><div><p class="eyebrow">10 / REFLECTION</p><h2>Learning, challenges, and growth<span class="accent-dot">.</span></h2></div><button class="btn btn-outline-primary" data-open-editor="reflection">Edit reflection</button></div><p class="reflection-text">${multiline(text || 'Write your reflection in the portfolio data file.')}</p><div class="word-count-line"><span class="word-count-dot"></span><span>${escapeHtml(status)}</span></div><p class="muted-copy reflection-prompts">Include the PDF prompts: prior knowledge, key learning, most educational project, biggest challenge, growth in skills, improvement areas, desired IT professional identity, and career readiness.</p></div>`;
   }
 
+  const CHECKLIST_STORAGE_KEY = 'bsitIndustryReadyPortfolio.checklist.v1';
+
+function readChecklistProgress() {
+    try {
+        const saved = JSON.parse(
+            localStorage.getItem(CHECKLIST_STORAGE_KEY) || '{}'
+        );
+
+        return saved && typeof saved === 'object' && !Array.isArray(saved)
+            ? saved
+            : {};
+    } catch (error) {
+        console.warn('Could not read checklist progress.', error);
+        return {};
+    }
+}
+
+function writeChecklistProgress(progress) {
+    try {
+        localStorage.setItem(
+            CHECKLIST_STORAGE_KEY,
+            JSON.stringify(progress)
+        );
+        return true;
+    } catch (error) {
+        console.error('Could not save checklist progress.', error);
+        alert('Your browser could not save checklist progress.');
+        return false;
+    }
+}
+
+function checklistProgressKey(item, index) {
+    return String(item && item.item ? item.item : 'checklist-item-' + index);
+}
+
+
   function renderChecklist() {
     const items = Array.isArray(data.checklist) ? data.checklist : [];
-    const done = items.filter((item) => item.completed).length;
-    const percentage = items.length ? Math.round((done / items.length) * 100) : 0;
-    $('#checklistContent').innerHTML = `<div class="section-intro-row"><div><p class="eyebrow">SUBMISSION READINESS</p><h2>Final portfolio checklist<span class="accent-dot">.</span></h2></div><a class="text-button" href="editing.html">Update checklist ↗</a></div><div class="checklist-summary"><div><strong>${done} / ${items.length}</strong><span>requirements marked complete</span></div><div class="progress-track" role="progressbar" aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100" aria-label="Portfolio checklist progress"><span style="width:${percentage}%"></span></div><span class="progress-number">${percentage}%</span></div><div class="checklist-grid">${items.map((item, index) => `<label class="checklist-item ${item.completed ? 'is-complete' : ''}"><input type="checkbox" ${item.completed ? 'checked' : ''} disabled aria-label="${escapeHtml(item.item || 'Requirement')}"><span class="custom-check" aria-hidden="true">✓</span><span>${escapeHtml(item.item || 'Requirement')}</span></label>`).join('')}</div><p class="muted-copy checklist-note">Checking an item tracks your progress only. Make sure you can show the actual evidence before marking it complete.</p>`;
+    const savedProgress = readChecklistProgress();
+
+    const checklistItems = items.map((item, index) => {
+        const key = checklistProgressKey(item, index);
+
+        const completed = Object.prototype.hasOwnProperty.call(savedProgress, key)
+            ? Boolean(savedProgress[key])
+            : Boolean(item.completed);
+
+        return { item, index, completed };
+    });
+
+    const done = checklistItems.filter(entry => entry.completed).length;
+    const percentage = checklistItems.length
+        ? Math.round((done / checklistItems.length) * 100)
+        : 0;
+
+    $('#checklistContent').innerHTML = `
+        <div class="section-intro-row">
+            <div>
+                <p class="eyebrow">SUBMISSION READINESS</p>
+                <h2>Final portfolio checklist<span class="accent-dot">.</span></h2>
+            </div>
+            <a class="text-button" href="editing.html">Update checklist ↗</a>
+        </div>
+
+        <div class="checklist-summary">
+            <div>
+                <strong>${done} / ${checklistItems.length}</strong>
+                <span>requirements marked complete</span>
+            </div>
+
+            <div class="progress-track"
+                 role="progressbar"
+                 aria-valuenow="${percentage}"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 aria-label="Portfolio checklist progress">
+                <span style="width:${percentage}%"></span>
+            </div>
+
+            <span class="progress-number">${percentage}%</span>
+        </div>
+
+        <div class="checklist-grid">
+            ${checklistItems.map(({ item, index, completed }) => `
+                <label class="checklist-item ${completed ? 'is-complete' : ''}">
+                    <input
+                        type="checkbox"
+                        data-checklist-index="${index}"
+                        ${completed ? 'checked' : ''}
+                        aria-label="${escapeHtml(item.item || 'Requirement')}"
+                    >
+                    <span class="custom-check" aria-hidden="true">✓</span>
+                    <span>${escapeHtml(item.item || 'Requirement')}</span>
+                </label>
+            `).join('')}
+        </div>
+
+        <p class="muted-copy checklist-note">
+            You can tick or untick items anytime. Your progress is saved
+            in this browser and remains after refreshing the page.
+            It does not sync between different devices or visitors.
+            Only mark requirements complete when you have the evidence.
+        </p>
+    `;
   }
 
   function emptyState(title, message, editorKey) {
@@ -681,6 +780,32 @@
   }
 
   function eventDelegation() {
+    document.addEventListener('change', (event) => {
+    const checkbox = event.target.closest('input[data-checklist-index]');
+
+    if (!checkbox) return;
+
+    const index = Number(
+        checkbox.getAttribute('data-checklist-index')
+    );
+
+    const item = Array.isArray(data.checklist)
+        ? data.checklist[index]
+        : null;
+
+    if (!item || !Number.isInteger(index)) return;
+
+    const progress = readChecklistProgress();
+
+    progress[checklistProgressKey(item, index)] = checkbox.checked;
+
+    if (!writeChecklistProgress(progress)) {
+        checkbox.checked = !checkbox.checked;
+        return;
+    }
+
+    renderChecklist();
+});
     document.addEventListener('click', (event) => {
       const editRequest = event.target.closest('[data-open-editor], #openEditorButton');
       if (editRequest) {
