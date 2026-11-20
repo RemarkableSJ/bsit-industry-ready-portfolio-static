@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# Buildozer / Android outputs
+.buildozer/
+bin/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Private user data and credentials — do not commit
+buo.db
+cloud_config.json
+*.sqlite
+*.sqlite3
+buo_cloud_sync/
+buo_buo_cloud_sync/
+
+.buo_background_service.json
+.buo_steps.json

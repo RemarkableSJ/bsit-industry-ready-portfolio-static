@@ -1,0 +1,2 @@
+STATIC EDITION NOTES
+The portfolio retains the existing responsive visual design, light/dark theme, profile, skills, projects, troubleshooting, employability, resume, certificates, GitHub, contact, reflection, checklist, and defense presentation sections. Server-dependent admin/database/contact/evidence-upload functions have been removed. Content changes are made in data/portfolio.json and rebuilt with tools/build_portfolio_data.py.

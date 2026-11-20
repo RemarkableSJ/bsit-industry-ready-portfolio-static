@@ -1,0 +1,32 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets.toml
+.streamlit/secrets.toml
+config.php
+cloud_config.json
+**/cloud_config.json
+
+# Local application databases and user data
+*.db
+*.sqlite
+*.sqlite3
+buo.db
+
+# Python and Android build artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.buildozer/
+bin/
+*.keystore
+*.jks
+key.properties
+
+# Editors and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

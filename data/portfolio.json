@@ -1,0 +1,515 @@
+{
+  "profile": {
+    "name": "Joshua E. Decena",
+    "role": "Fourth-Year BSIT Student · Aspiring IT Professional",
+    "specialization": "IT Support · Web Applications · Data Analysis · Mobile Development",
+    "targetPosition": "Entry-Level IT Support / Technical Support",
+    "location": "Philippines",
+    "professionalStatement": "I am a fourth-year BSIT student developing practical skills in IT support, web and mobile application development, and data analysis. I enjoy solving technical problems, building useful systems, and documenting my work clearly. I am seeking an entry-level opportunity where I can support users, contribute to reliable IT operations, and continue learning.",
+    "aboutMe": "I am a fourth-year Bachelor of Science in Information Technology student at Datamex College of Saint Adeline. I am building practical experience in web development, databases, data analysis, desktop application development, and IT problem-solving. My projects include Joshua's Studio House Museum, a front-end art gallery and storefront presentation demo with artwork collections, product variants, a browser-local cart, and simulated commission requests. It is designed for presentation only and does not accept real orders or payments. TechZone Mobile Store uses Python, Streamlit, Excel, SQL, and data visualizations to compare smartphone products and support inventory screening. I am also developing Buo, a local-first Python/Kivy fitness application focused on strength logging, training plans, recovery check-ins, reminders, analytics, and private progress tracking. A Windows desktop run setup is included; GPS route capture and Android-specific tracking remain incomplete.\n\nI approach technical work by understanding the problem, breaking it into manageable tasks, testing what I build, and documenting results and limitations. I value continuous learning, responsible handling of information, clear communication, and evidence-based decisions. My current career direction is entry-level IT support and technical support, while continuing to strengthen my development and data skills. I want to contribute to a team, help users solve technology problems, and grow into a dependable IT professional. This portfolio presents my current work honestly: completed deliverables, working prototypes, and areas that still need testing or improvement.",
+    "email": "",
+    "phone": "",
+    "github": "",
+    "linkedin": "",
+    "portfolioUrl": "",
+    "photoUrl": "",
+    "program": "Bachelor of Science in Information Technology (BSIT)",
+    "school": "Datamex College of Saint Adeline",
+    "section": "",
+    "academicYear": "",
+    "instructor": ""
+  },
+  "skills": [
+    {
+      "category": "Programming",
+      "skill": "Python",
+      "level": "Applied in projects",
+      "evidence": "Used in the TechZone data-analysis workflow and the Buo Python/Kivy desktop fitness application. Evidence includes the Streamlit analysis source and Buo desktop source package."
+    },
+    {
+      "category": "Programming",
+      "skill": "JavaScript",
+      "level": "Applied in project",
+      "evidence": "Used in the Joshua’s Studio House Museum static storefront demo and this GitHub Pages portfolio. Evidence includes responsive navigation, collection rendering, product/cart logic, and static portfolio sections."
+    },
+    {
+      "category": "Web Development",
+      "skill": "HTML5 and CSS3",
+      "level": "Applied in projects",
+      "evidence": "Used to build the Joshua’s Studio House Museum storefront and this responsive BSIT portfolio."
+    },
+    {
+      "category": "Database",
+      "skill": "SQL (supplementary database queries)",
+      "level": "Project use",
+      "evidence": "Used in the supplementary TechZone database setup and analysis queries. The main portfolio website itself is static and does not use a database."
+    },
+    {
+      "category": "Database",
+      "skill": "SQLite",
+      "level": "Applied in project source; device/runtime verification pending",
+      "evidence": "Buo uses a local SQLite database module and stores its database at the configured buo.db path. The private database file is excluded from the public source archive."
+    },
+    {
+      "category": "Data Analysis",
+      "skill": "Excel and data interpretation",
+      "level": "Applied in project",
+      "evidence": "TechZone workbook includes raw and cleaned data, formula-driven summaries, brand analysis, price tiers, and an SQL guide."
+    },
+    {
+      "category": "Data Analysis",
+      "skill": "Pandas, NumPy, Streamlit, and Plotly",
+      "level": "Applied in project",
+      "evidence": "Used in the TechZone interactive smartphone analysis and decision-support dashboard."
+    },
+    {
+      "category": "Desktop Application Development",
+      "skill": "Kivy desktop application development",
+      "level": "Desktop launch confirmed; feature testing ongoing",
+      "evidence": "Buo includes a Kivy application class, Python package entry point, Windows setup/launch scripts, and local SQLite data layer. The owner confirmed Windows startup and a successful Gemini API response. GPS route and Android background-service features remain incomplete."
+    },
+    {
+      "category": "Tools",
+      "skill": "Git, GitHub, Jupyter Notebook, and development environments",
+      "level": "Practical use",
+      "evidence": "Used for source-code version control, static-site publishing, notebook-based analysis, and project testing."
+    },
+    {
+      "category": "Networking",
+      "skill": "Networking and technical troubleshooting fundamentals",
+      "level": "Developing",
+      "evidence": "Continue adding personally completed troubleshooting records, command output, and lab screenshots."
+    },
+    {
+      "category": "Cybersecurity",
+      "skill": "Secure web-development fundamentals",
+      "level": "Learning / applied awareness",
+      "evidence": "Portfolio case study covers SQL injection, parameterized queries, least privilege, secret protection, and safe testing."
+    }
+  ],
+  "projects": [
+    {
+      "liveDemo": "",
+      "githubUrl": "",
+      "readmeUrl": "",
+      "screenshots": "The source archive now includes the actual artwork and product photographs under project-archives/joshua-studio-house-museum/assets/images/. The project case-study page displays selected works, and the downloadable source archive includes all 17 image files used by the storefront.",
+      "nonFunctionalRequirements": "Keep the presentation responsive and readable; load the included image assets with relative paths; keep demo interactions inside the current browser; and clearly label simulated checkout and commission flows so visitors do not mistake them for real transactions.",
+      "existingProposedSystem": "The static presentation edition provides a curated public-facing gallery and storefront interface for browsing artwork, supplies, and commission options. It is intended to demonstrate the user experience without accepting real transactions.",
+      "useCases": "Visitor: explore the gallery showrooms and browse collections. Visitor: filter products, select a product variant, and view sample price/stock details. Visitor: add items to a browser-local cart and complete a simulated checkout. Visitor: fill out a simulated commission request. All interactions are local presentation demonstrations only.",
+      "interfaceDesign": "The supplied interface uses a museum/gallery visual direction with a fixed navigation bar, Grand Hall landing area, Graphite / Canvas / Artisan Artifacts showrooms, category tabs, product cards, acquisition cart, and commission request form. The design uses Tailwind utility classes, custom CSS, Cinzel and Playfair Display headings, and Lucide icons.",
+      "installation": "Download and extract the static Museum presentation folder. Open index.html in a modern browser, or run `python -m http.server 8000` from the folder and visit `http://localhost:8000`. To publish online, create a separate GitHub repository and upload the folder contents to its root, then enable GitHub Pages for main /(root).",
+      "usage": "Open the Grand Hall and navigate through Graphite, Canvas, and Artisan Artifacts. Use the showroom arrows, enter a collection, filter items, choose variants where available, and add a product to the cart. Continue to the simulated checkout, complete the sample delivery/pickup fields, and finish the demo. Use Patronage/Request to demonstrate the local-only commission form. No real order or payment is submitted.",
+      "testing": "Static package checks verify the JavaScript parses, all local image references resolve, payment and external-order integrations are absent from the presentation copy, and the expected site entry point and script are included. Interactive browser testing is still required on the target computer and after publishing.",
+      "bugsAndCorrections": "The original source included external account, order, and payment integrations. For the presentation-only edition, those server/payment integrations are removed. Cart checkout and commission submission now create browser-local demo records and clearly state that no actual transaction is made.",
+      "deploymentNotes": "This presentation edition is static HTML/CSS/JavaScript and can be published on GitHub Pages. The main BSIT portfolio has also been converted to a static GitHub Pages edition; it no longer requires a server or database.",
+      "developerRole": "The supplied presentation source includes the storefront HTML, visual styling, JavaScript showroom and catalog interactions, product variant/cart logic, browser-local simulated checkout, commission form, and the 17 artwork/product image assets. Update this description to reflect the parts personally implemented, modified, or contributed by collaborators.",
+      "limitations": "This is a presentation demo, not a live ecommerce service. Cart and commission records stay only in the current browser and can be cleared by the visitor. No actual payment, order submission, inventory reservation, fulfilment, Firebase synchronization, or admin dashboard is provided. Visual CDN resources require internet access.",
+      "futureImprovements": "Perform browser testing on desktop/mobile sizes; optionally replace external CDN dependencies with local assets for offline presentation; publish the static site through GitHub Pages; provide real transaction functionality only if a secured backend is intentionally added in the future.",
+      "title": "Joshua's Studio House Museum — Art Gallery & Online Store",
+      "type": "Static Web Presentation · Digital Art Gallery & Storefront Demo",
+      "status": "Static Presentation Demo — deployment pending",
+      "overview": "A front-end-only presentation edition of Joshua’s Studio House Museum, an art gallery and storefront experience for graphite portraits, canvas paintings, art supplies, studio materials, and custom commissions. Visitors can browse collections, filter products, select variants, explore a browser-local cart, and demonstrate delivery/pickup and commission flows. No real orders or payments are processed.",
+      "problem": "A small art studio needs an online space where visitors can explore collections, understand product options, request custom work, and submit orders without relying only on separate social posts and manual messages.",
+      "objectives": "Present artwork and studio products through curated collections; demonstrate showroom navigation and category filters; display product variants, sample pricing, and sample stock; demonstrate a local cart and mock commission request; and provide a visually complete portfolio presentation without requiring a backend.",
+      "targetUsers": "Visitors and customers interested in graphite portraits, canvas artworks, drawing materials, studio products, and custom commissions. The studio operator uses the order records and inventory controls, subject to adding proper administrator authentication and authorization.",
+      "technologies": "HTML5, CSS3, JavaScript ES modules, Tailwind CSS CDN, Lucide icons, browser localStorage, and static image assets.",
+      "features": "Museum-style landing page with Graphite, Canvas, and Artisan Artifacts showrooms; carousel controls; category filtering; product cards; material/supply variants; sample price and stock display; browser-local cart with quantity and subtotal; simulated shipping/pickup checkout; local-only demo commission request; local stock changes saved in localStorage; responsive storefront and 17 supplied artwork/product images.",
+      "functionalRequirements": "Display the landing page and showrooms; browse/filter collections; select product variants; display sample price/stock; add/remove items from the local cart; calculate subtotals; select demonstration delivery/pickup; validate and complete a simulated checkout; and validate/save a local-only demo commission request. Do not submit real transactions.",
+      "architecture": "Static HTML loads Tailwind/Lucide/font CDNs and local CSS. JavaScript renders showrooms, inventory cards, filters, product variants, cart, and commission forms. Inventory and demonstration records are stored only in browser localStorage. There are no server-side order endpoints, webhooks, or payment SDKs in the presentation edition.",
+      "databaseDesign": "No server database is used in this static presentation edition. The product catalog is defined in JavaScript and demo inventory/order/request state is stored in browser localStorage on the current device. Clearing browser storage resets the demo state."
+    },
+    {
+      "liveDemo": "",
+      "githubUrl": "",
+      "readmeUrl": "",
+      "screenshots": "Upload screenshots of the dashboard overview, filter controls, KPI cards, all five visualizations, Insights & Solutions, Compare tab, Data tab, Excel summary, and SQL query results.",
+      "nonFunctionalRequirements": "Keep calculations reproducible; label measures and currencies clearly; make the dashboard interactive and understandable; show the data limitations; retain the original CSV separately from the cleaned data; and avoid describing correlation as causation.",
+      "existingProposedSystem": "Existing approach: review the raw CSV or individual smartphone rows manually. Proposed approach: clean the dataset once and use a dashboard, notebook, workbook, and SQL scripts to compare records consistently and explain the evidence behind recommendations.",
+      "useCases": "Analyst: load and inspect the source dataset. Store manager: filter models by brand, price, rating, RAM, or storage. Manager: compare selected smartphones. Reviewer: inspect charts and recommendations. User: download a filtered CSV for further review.",
+      "interfaceDesign": "The Streamlit dashboard has filter controls, KPI cards, analysis charts, an Insights & Solutions section, a Compare area, and a Data area. The notebook provides the reproducible step-by-step analysis and the Excel workbook organizes raw data, cleaned data, summaries, brand analysis, and price tiers.",
+      "installation": "Extract the TechZone project ZIP. Install its Python requirements using `python -m pip install -r requirements.txt`. From the project folder, run `streamlit run app.py`. Open the local URL printed in the terminal, commonly `http://localhost:8501`. Open the Jupyter notebook separately when demonstrating the analysis process. Run the supplied SQL setup script in a MySQL environment for the supplementary database portion.",
+      "usage": "Start the Streamlit app; inspect the KPI cards; choose filters for brand, price, rating, RAM, or storage; review the updated charts and recommendations; select two to four models in Compare; open the Data view; and download the filtered CSV. Run the Jupyter notebook from top to bottom to explain the data-cleaning and analysis process.",
+      "testing": "Project documentation reports 15 valid smartphone records, 10 brands, no missing values in required product fields, and no duplicate Brand–Model pairs after cleaning. The workbook, SQL guide, notebook, and dashboard are included in the project package. Repeat the install and dashboard run on the presentation computer and capture screenshots before claiming a live demonstration test.",
+      "bugsAndCorrections": "The original CSV contains 29 data rows after the header, including 14 appended summary rows with blank Model fields. The cleaning workflow excludes those summary rows and retains the 15 actual smartphone products. This prevents summary lines from being miscounted as real products.",
+      "deploymentNotes": "The dashboard currently runs as a local Streamlit application; no public deployment URL has been supplied. For online deployment, prepare a hosting environment that supports Streamlit, include the cleaned data file, pin package versions, and avoid uploading private or confidential data. Store any future secrets outside the source repository.",
+      "developerRole": "Prepared the data-analysis package and supporting materials, including the cleaned dataset, Python dashboard/notebook, Excel workbook, SQL setup and query guide, and project report. Update this description if group members contributed to any part of the work.",
+      "limitations": "The cleaned dataset contains only 15 actual smartphone records and 10 brands. It has product specifications, prices, and customer ratings, but no transaction dates, units sold, revenue, customer purchase history, purchase cost, or stock movement. It cannot prove which products are best sellers or forecast sales. The price-rating correlation describes this small sample and does not prove causation.",
+      "futureImprovements": "Add actual transaction and inventory history, units sold, revenue, purchase costs, margins, discounts, returns, and stock-out records; increase the dataset size; compare recommendations with real purchasing outcomes; add user authentication if multi-user deployment is required; and deploy the dashboard online with documented access controls.",
+      "title": "TechZone Mobile Store — Smartphone Product Analysis & Decision Support",
+      "type": "Data Analysis · Database · Decision-Support Dashboard",
+      "status": "Documented Project Package",
+      "overview": "A data-analysis project that cleans and examines an instructor-provided smartphone dataset, then presents product comparisons, summary statistics, visualizations, and cautious inventory-screening recommendations. The package includes a Streamlit dashboard, Jupyter Notebook, Excel workbook, CSV data, and supplementary MySQL scripts.",
+      "problem": "A store evaluating smartphone products needs a consistent way to compare prices, specifications, brands, and customer ratings before reviewing possible inventory options. Individual raw records are difficult to interpret without cleaning, summaries, visualizations, and clear decision rules.",
+      "objectives": "Inspect and clean the source CSV; retain valid smartphone product records; calculate descriptive statistics; compare brands; create visualizations; analyze numerical relationships; provide interactive filters and product comparisons; and translate the results into transparent recommendations.",
+      "targetUsers": "A store owner, purchasing staff, or analyst reviewing smartphone product options. The dashboard is a decision-support aid and should be used alongside real sales, inventory, cost, and demand information when making purchasing decisions.",
+      "technologies": "Python, Streamlit, Pandas, NumPy, Plotly, Jupyter Notebook, Microsoft Excel, SQL, and MySQL. Supporting deliverables include the cleaned CSV, analysis notebook, workbook, SQL setup/query script, README, and report.",
+      "features": "Interactive filters for brand, price range, minimum customer rating, RAM, and storage; KPI cards for model count, average price, average rating, lowest price, and highest price; brand comparison charts; price-versus-rating scatter plot; price distribution; correlation heatmap; Insights & Solutions recommendations; side-by-side comparison of selected models; filtered data table and CSV download; Excel summary and analysis sheets; and supplementary MySQL queries.",
+      "functionalRequirements": "Load the instructor-provided CSV; remove appended summary rows that are not product records; inspect missing values and duplicates; calculate summary statistics; group by brand; draw charts; filter the dashboard; compare two to four selected products; and export filtered records. The provided project materials document these workflows.",
+      "architecture": "Source CSV → data cleaning and validation with Python/Pandas → descriptive and grouped analysis with Pandas/NumPy → visualizations and interactive views in Streamlit/Plotly → recommendations and downloadable filtered data. The notebook and Excel workbook provide supporting analysis artifacts; MySQL scripts demonstrate database storage and querying.",
+      "databaseDesign": "The supplementary MySQL implementation stores the smartphone records and provides setup and analysis queries. The dataset fields are Brand, Model, RAM, Storage, Processor, Battery, Screen Size, Camera, Price, and Customer Rating. Use the supplied SQL script as the source of truth for the exact table and column definitions."
+    },
+    {
+      "liveDemo": "",
+      "githubUrl": "",
+      "readmeUrl": "",
+      "screenshots": "The supplied source includes the Buo orange lightning-bolt app icon at assets/icon.png. Capture genuine Windows desktop screenshots after successfully launching Buo; no Android APK or verified Android screenshots are included in this desktop presentation package.",
+      "nonFunctionalRequirements": "Protect private fitness profiles, journals, and workout records; preserve local-first usage when cloud services are not configured; keep the desktop interface usable at common Windows window sizes; and gracefully disclose or disable Android-only APIs when running on Windows.",
+      "existingProposedSystem": "A user may track strength workouts, recovery notes, reminders, and personal progress using separate notes or tools. Buo consolidates strength logging, planning, recovery check-ins, reminders, records, analytics, exports, and private tracking in a local-first desktop-friendly application.",
+      "useCases": "User: create or unlock a local profile. User: record strength exercises, sets, reps, load, and RIR. User: use workout/rest timers and a time calculator. User: create/review training plans. User: save recovery check-ins and private journal entries. User: review records and analytics and export summaries. Optional cloud/AI features require private credentials and are not enabled in the public package.",
+      "interfaceDesign": "The supplied Kivy interface uses a custom SF component system with cards, panels, titles, subtitles, captions, buttons, inputs, route/chart widgets, a profile-lock screen, a dashboard, and dedicated screens for strength, wellness, reports, analytics, history, synchronization, training tips, journal, Tabata, records, and plans. The application uses a dark-first theme with a persisted theme setting and orange accent colors.",
+      "installation": "On Windows 10/11, extract the Buo desktop source folder. Use 64-bit Python 3.13 or 3.12. Double-click `setup_buo_windows.bat` to create a virtual environment and install `requirements-desktop.txt`. Then double-click `run_buo_windows.bat`, or run `python main.py` from the project folder after activating the virtual environment. Internet access is required for initial dependency installation.",
+      "usage": "Launch Buo and create or unlock a local profile. Use dashboard shortcuts to open strength logging, workout planning, recovery, analytics, records, journal, and backup screens. Log strength work with exercise, sets, reps, weight, and RIR. Use the timers during training, save recovery/journal information, review analytics, and export reports or account backups. Desktop launch needs to be verified on the presentation PC; Android-only GPS, step sensor, and background-service functions are not part of the desktop demonstration.",
+      "testing": "The supplied Python source passed syntax compilation and package/import checks. The owner confirmed that Buo opens on Windows and showed a successful Gemini API HTTP 200 response during an online AI Coach test. The updated source package includes the SQLite startup migration correction, safer Gemini API-key handling, retry logic, clearer fallback errors, and scrolling for long AI answers. Individual smart tools still need a structured acceptance test. GPS route capture remains stubbed and Android background tracking remains disabled.",
+      "bugsAndCorrections": "The submitted source used several older internal names. The consolidated package uses the Buo public title, BuoApp class, buo Python package, and main.py entry point. A Windows desktop setup and launch path has been added. GPS handlers and route/GPX helpers remain placeholders, and the Android background tracking method remains disabled.",
+      "deploymentNotes": "Buo is a Windows desktop application, not a browser app. GitHub stores the source and offers a downloadable desktop package; it does not run the Kivy interface inside GitHub Pages. The public archive includes a blank cloud_config.example.json. Keep the actual cloud_config.json, API key, local database, and fitness records private.",
+      "developerRole": "The supplied project files include the Python/Kivy application, UI screens, SQLite-backed data module, platform-service helpers, Android step-counter/background-tracker source, Buildozer configuration, icon, and project documentation. Describe the parts personally implemented or modified and any group contributions accurately; do not claim GPS, background continuity, or Android release readiness without tests.",
+      "limitations": "The desktop UI has not yet been launched on the user’s Windows computer. Kivy could not be installed in this review environment because package index access was unavailable. GPS route handlers and route/GPX helpers are placeholders. The app-side Android background service launcher returns False; Android step counter and notification behavior are device-specific and remain unverified. Optional Gemini/Firebase integrations require private configuration and were not tested.",
+      "futureImprovements": "Run and test the desktop build on the presentation computer; add automated tests for login, strength log persistence, timers, analytics, exports, and backups; implement GPS/route features only if they are required; reconnect Android background-service functionality only if an Android release is planned; and keep optional AI/cloud credentials private.",
+      "title": "Buo — Strength Training & Fitness Progress App",
+      "type": "Desktop Application · Python/Kivy Fitness & Strength Tracking",
+      "status": "Windows desktop launch confirmed · feature testing ongoing",
+      "overview": "A local-first Python/Kivy fitness application focused on strength-training logs, workout planning, recovery check-ins, reminders, analytics, records, exports, and private progress tracking. A Windows desktop setup path is included so the app can be presented in its own window without an Android APK.",
+      "problem": "People who train regularly may need one private place to record strength sessions, track training volume and recovery, organize training plans, and review their progress over time.",
+      "objectives": "Provide a local profile and private data store; support structured strength logging; include workout timers and planning tools; record recovery and journal check-ins; present personal records and analytics; allow user-controlled exports and backups; and provide optional AI/cloud integrations when configured securely.",
+      "targetUsers": "Individuals who want a private personal fitness and strength-training log. It is not presented as a medical diagnostic or treatment application.",
+      "technologies": "Python 3.12/3.13, Kivy 2.3.2, Plyer 2.1.0, Requests 2.32.3, SQLite, JSON, and optional PyJNIus/Buildozer configuration retained for future Android packaging.",
+      "features": "Local profile creation and passcode unlock; SQLite-backed personal data; strength logging with sets, reps, load, and RIR; workout/rest timers; time calculator; structured training plans; recovery and wellness check-ins; reminder and notification code; private journal; personal records; reports and analytics; CSV/JSON exports; local backup/restore; optional Firebase backup/sync hooks; optional Gemini-powered assistance when privately configured; Buo app icon; Windows desktop setup and launch scripts.",
+      "functionalRequirements": "Create or unlock a local profile; save strength training entries; calculate workout timer durations; create and store training plans; save recovery check-ins and journal entries; display records and analytics; export reports and personal data; create reminders; and provide local backup/restore. GPS route capture and Android background tracking are not functional in this source snapshot.",
+      "architecture": "The Kivy UI and application controller are implemented in Python under the buo package. The app uses local SQLite configured through buo/config.py. Optional Gemini/Firebase functionality uses private configuration. Plyer supplies platform-dependent notifications. The Windows desktop build uses requirements-desktop.txt and runs through main.py. Buildozer/Android service configuration is retained separately but is not required for the desktop presentation.",
+      "databaseDesign": "Buo uses a local SQLite database at the configured buo.db path. The local database file is user data and is excluded from the public source archive. Optional Firebase backup is not configured in the public package."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "caseNumber": "01",
+      "title": "GitHub Pages cannot run server-side portfolio features",
+      "status": "Platform limitation confirmed · static edition prepared · public deployment pending",
+      "problem": "The original portfolio used server-dependent pages for editing content, saving contact messages, and managing uploaded evidence. GitHub Pages cannot execute server-side application code, so those features would not work when deployed there.",
+      "possibleCauses": "The selected hosting platform serves static HTML, CSS, JavaScript, and other static assets. It does not provide a server runtime or shared relational database for this website.",
+      "diagnosticProcedure": "Reviewed the deployment target requirements and the portfolio source structure. Identified server-side routes and database-dependent features, then separated the content and public pages from those backend components.",
+      "solution": "Prepared a separate static edition using HTML, CSS, JavaScript, and JSON-based content. Project case studies and the defense presentation now render in the browser. Contact uses email/social links, and documentation explains how to edit content and publish updates through GitHub.",
+      "lessonLearned": "Choose a hosting platform based on the application runtime. A static hosting service is appropriate for a static portfolio, but server-side editing, uploads, and stored messages require a separate backend."
+    },
+    {
+      "caseNumber": "02",
+      "title": "TechZone source CSV contains appended summary rows",
+      "status": "Documented data-cleaning correction",
+      "problem": "The original TechZone CSV has 29 data rows after the header, but only 15 rows represent actual smartphone products. Fourteen appended summary rows have blank Model values and should not be treated as individual phones.",
+      "possibleCauses": "Summary labels and aggregate values were appended to the raw file; treating every row as a product would inflate counts and distort statistics.",
+      "diagnosticProcedure": "Inspect the Model column; count rows with valid product model names; compare the data structure with the assignment’s expected 15 products; and check missing values and duplicate Brand–Model pairs after filtering.",
+      "solution": "Keep the 15 actual smartphone records and exclude the 14 appended summary rows from product-level calculations. The cleaned dataset reports 15 valid records, 10 brands, no missing required product fields, and no duplicate Brand–Model pairs.",
+      "lessonLearned": "Data cleaning starts with understanding what each row represents. Summary rows must not be mixed with individual observations during descriptive analysis."
+    },
+    {
+      "caseNumber": "04",
+      "title": "Buo GPS route capture is not implemented in the supplied snapshot",
+      "status": "Source-code finding · implementation pending",
+      "problem": "The app exposes activity and route-related screens/helpers, but GPS start/stop and location callbacks are stubs. Route distance, browser-map, and GPX helper functions return placeholder values.",
+      "possibleCauses": "The supplied build prioritizes local strength training and retains route-related UI or legacy data structures without a completed location-capture implementation.",
+      "diagnosticProcedure": "Inspect BuoApp.start_gps_tracking, stop_gps_tracking, on_gps_status, and on_gps_location, then check route helper functions such as haversine_km, build_static_map_url, build_route_browser_url, and build_gpx. Test location permissions and callbacks only after implementing them.",
+      "solution": "No GPS fix is claimed. Keep the portfolio description explicit that GPS route capture is incomplete. Implement permission checks, location callbacks, distance calculation, route persistence, and tests before presenting the feature as operational.",
+      "lessonLearned": "A route screen or Android permission declaration does not prove that GPS tracking is implemented. Verify callbacks and stored location results on a real device."
+    },
+    {
+      "caseNumber": "05",
+      "title": "Buo app-side background tracking does not start",
+      "status": "Source-code finding · integration pending",
+      "problem": "The package contains service/background_tracker.py and a Buildozer service declaration, but BuoApp.start_background_tracking returns False and does not start the declared service.",
+      "possibleCauses": "The service script and Buildozer declaration were supplied as a foundation, while the application-side lifecycle and service start/stop bridge has not been implemented.",
+      "diagnosticProcedure": "Inspect BuoApp.start_background_tracking and stop_background_tracking, check the service declaration path in buildozer.spec, build a debug APK, and collect Android logcat output while testing service start, stop, notification, and process lifecycle.",
+      "solution": "No working background service is claimed. Connect the app lifecycle to the Android service API, handle permissions and foreground notifications, then verify behavior on supported Android versions and device manufacturers.",
+      "lessonLearned": "A service script existing in the repository does not mean the application starts it. Confirm the complete lifecycle from the UI action through Android service execution."
+    }
+  ],
+  "securityCase": {
+    "title": "Cybersecurity Case Study — SQL Injection",
+    "vulnerability": "SQL injection occurs when an application builds a database query in a way that allows untrusted input to change the intended SQL command.",
+    "howItHappens": "A common cause is concatenating form input directly into an SQL statement. An attacker may then supply input that changes the query logic. This case is for defensive understanding and authorized testing only.",
+    "risks": "Depending on the query and database permissions, SQL injection may expose records, bypass an authentication check, alter data, or damage data. The actual impact depends on the application and account privileges.",
+    "prevention": "Use parameterized queries supported by the chosen database library; keep untrusted input separate from SQL structure; validate application rules on the server; and avoid building SQL by concatenating raw input.",
+    "practices": "Use least-privilege database accounts where a database is required, protect configuration files and credentials, avoid showing raw database errors to visitors, keep software updated, back up important data, and test only systems for which you have permission.",
+    "demonstration": "Show a safe, language-neutral comparison between a vulnerable string-concatenated query and a parameterized query using harmless sample input. Do not test a real third-party website or publish database credentials."
+  },
+  "aiLog": [
+    {
+      "date": "2026-10-23",
+      "task": "Portfolio planning and website structure",
+      "assistance": "AI assistance was used to map the instructor’s portfolio guidelines into website sections and prepare an editable portfolio structure.",
+      "verification": "Review the page structure against the instructor PDF, replace sample content with personal work, and test the site in the actual local hosting environment.",
+      "result": "The portfolio was rebuilt as a static HTML/CSS/JavaScript site for free GitHub Pages hosting. Server-side editing, database storage, and upload features were removed from this edition."
+    },
+    {
+      "date": "2026-11-13",
+      "task": "Project documentation and portfolio finalization",
+      "assistance": "AI assistance was used to review the available project notes and source files, draft project summaries, identify naming/import inconsistencies, and prepare the final portfolio content.",
+      "verification": "Reviewed the static source structure, portfolio data JSON, page scripts, and project assets. Public GitHub Pages deployment and browser acceptance tests still need to be completed.",
+      "result": "Documentation distinguishes static portfolio features, separately deployed project applications, confirmed Buo desktop/Gemini tests, and remaining manual deployment tests."
+    }
+  ],
+  "aiReflection": {
+    "helped": "AI assistance helped organize the instructor’s requirements, explain code and configuration, draft project documentation, and identify areas that needed further verification. It was used as a support tool for planning and technical explanation.",
+    "verified": "The static portfolio source was reviewed for server-side routes and prepared for GitHub Pages. The public Pages deployment and browser tests still need to be completed. Buo has been opened on Windows and a successful Gemini HTTP 200 response was observed, while its other tools need separate testing.",
+    "learned": "The important lesson is to understand the code and evidence rather than accept generated answers immediately. Check the exact source, explain why a configuration is needed, test the result, and document what remains incomplete.",
+    "limitations": "AI-generated suggestions may misinterpret a project feature or describe planned behavior as working. I verify statements against source files and test the relevant workflow before presenting it. The Museum is a front-end-only presentation demo and has no AI or real server-side order/payment service. Buo has returned a successful Gemini response in a Windows test, but individual workflows still need testing. Never publish API keys, passwords, private records, or signing credentials."
+  },
+  "interviews": [
+    {
+      "question": "Tell me about yourself.",
+      "answer": "I am a fourth-year BSIT student with project experience in front-end web development, data analysis, and Python/Kivy desktop application development. I am building my skills in IT support and technical troubleshooting. I use my portfolio to show the source code, the functions I can demonstrate, and the limitations I still need to test."
+    },
+    {
+      "question": "Why did you choose BSIT?",
+      "answer": "Explain your real reason for choosing BSIT. Connect it to your interest in technology, solving practical problems, supporting users, or building applications. Add a personal example rather than memorizing a generic answer."
+    },
+    {
+      "question": "What are your strongest IT skills?",
+      "answer": "Choose two or three technologies you can demonstrate. Examples include HTML/CSS/JavaScript for the Museum presentation demo, Python/Streamlit for TechZone, and Python/Kivy for Buo. Explain what you personally built and show evidence."
+    },
+    {
+      "question": "What is your weakest skill?",
+      "answer": "Be honest about one area you are improving, such as structured testing, networking troubleshooting, database design, or Kivy desktop runtime testing. Explain the specific task you are practicing and what you have not verified yet."
+    },
+    {
+      "question": "Tell us about your major project.",
+      "answer": "You can discuss Joshua’s Studio House Museum, TechZone Mobile Store, or Buo. For the Museum, explain the gallery, collection filters, product variants, browser-local cart, and simulated commission flow; clearly state that it is a presentation-only static demo. For TechZone, explain data cleaning, comparisons, charts, and its 15-record product dataset. For Buo, explain local-first strength logging, timers, training plans, recovery, journal, analytics, and desktop setup."
+    },
+    {
+      "question": "What was your biggest technical problem?",
+      "answer": "One documented example is selecting an appropriate hosting platform for a static portfolio. I identified that GitHub Pages serves static files, so I prepared HTML, CSS, and JavaScript pages and removed the server-dependent parts. Explain the source layout, publishing configuration, and tests still required after deployment."
+    },
+    {
+      "question": "How did you solve it?",
+      "answer": "Describe the diagnostic process in order: reproduce the error, check the exact URL, verify the web-server document root, confirm the file exists under htdocs, make one correction, and retest. Only say it was resolved after you have verified the result."
+    },
+    {
+      "question": "How do you handle deadlines?",
+      "answer": "Prepare a genuine example. A strong structure is to list deliverables, divide work into small tasks, prioritize required features, set checkpoints, test early, and communicate risks before the deadline."
+    },
+    {
+      "question": "How do you work with a team?",
+      "answer": "Use a real school or workplace example. Explain your assigned responsibility, how you shared updates, how you handled a disagreement or delay, and how you supported the overall result."
+    },
+    {
+      "question": "Why should an organization consider hiring you?",
+      "answer": "Connect your practical project experience, willingness to learn, step-by-step troubleshooting approach, and ability to explain technical work. Support each claim with a specific example."
+    },
+    {
+      "question": "What technology are you currently learning?",
+      "answer": "A current example is Python/Kivy desktop application development through Buo. Explain the Python package structure, local SQLite data layer, Windows desktop setup, and the screens you have actually tested. Distinguish desktop features from Android-specific GPS, sensors, and background services that remain incomplete."
+    },
+    {
+      "question": "Where do you want to develop professionally?",
+      "answer": "Explain your current interest in entry-level IT support or technical support, then describe how you plan to strengthen Windows, networking, troubleshooting, user communication, secure application practices, and practical testing."
+    }
+  ],
+  "defensePlan": [
+    {
+      "step": "Introduction",
+      "duration": "1–2 minutes",
+      "talkingPoints": "Introduce yourself, the portfolio/project title, and the purpose of the presentation.",
+      "demonstration": "Open the portfolio home page and show the navigation."
+    },
+    {
+      "step": "Problem",
+      "duration": "2 minutes",
+      "talkingPoints": "Explain the user problem and why it matters.",
+      "demonstration": "Show the problem statement and intended users."
+    },
+    {
+      "step": "Objectives",
+      "duration": "1 minute",
+      "talkingPoints": "State the specific project objectives.",
+      "demonstration": "Point to the objectives in the project documentation."
+    },
+    {
+      "step": "Proposed Solution",
+      "duration": "2 minutes",
+      "talkingPoints": "Explain how the proposed solution addresses the problem.",
+      "demonstration": "Show the key features and user workflow."
+    },
+    {
+      "step": "Technology",
+      "duration": "2 minutes",
+      "talkingPoints": "Explain the technologies and why they were selected.",
+      "demonstration": "Show the tech stack and repository."
+    },
+    {
+      "step": "System Demonstration",
+      "duration": "5–10 minutes",
+      "talkingPoints": "Demonstrate the working system and representative user journeys.",
+      "demonstration": "Test a normal path and at least one validation/error case."
+    },
+    {
+      "step": "Database / Architecture",
+      "duration": "3 minutes",
+      "talkingPoints": "Explain system components, data flow, database tables, and relationships.",
+      "demonstration": "Show an architecture diagram, ERD, schema, or SQL query."
+    },
+    {
+      "step": "Problems Encountered",
+      "duration": "2 minutes",
+      "talkingPoints": "Describe actual technical issues encountered during development.",
+      "demonstration": "Show a documented issue or test failure without exposing secrets."
+    },
+    {
+      "step": "Solutions",
+      "duration": "2 minutes",
+      "talkingPoints": "Explain the evidence-led steps used to resolve the issues.",
+      "demonstration": "Show the corrected behavior and test result."
+    },
+    {
+      "step": "Future Improvements",
+      "duration": "1 minute",
+      "talkingPoints": "Identify realistic improvements and limitations.",
+      "demonstration": "Show the documented future-improvements section."
+    },
+    {
+      "step": "Questions and Answers",
+      "duration": "Panel",
+      "talkingPoints": "Listen carefully, answer honestly, and admit when something is outside the project's scope.",
+      "demonstration": "Be ready to explain code, evidence, design choices, and limitations."
+    }
+  ],
+  "careerPlan": {
+    "targetPosition": "Entry-Level IT Support / Technical Support Specialist",
+    "targetField": "IT support and IT operations, with continued development in web/mobile applications and data analysis.",
+    "currentSkills": "Project-based experience with HTML, CSS, JavaScript, Python, Streamlit, Pandas, NumPy, Plotly, Excel, SQL, Jupyter Notebook, Kivy desktop application development, and Git/GitHub. Levels vary by technology; use each project page as evidence and avoid claiming expert proficiency.",
+    "skillsToImprove": "Windows troubleshooting and administration; hardware and software diagnostics; TCP/IP, DNS, DHCP, and basic routing; ticket documentation and customer communication; Git-based deployment and static-site security; Python/Kivy desktop testing; and structured software testing.",
+    "technologies": "Continue practicing Windows administration, CompTIA A+ fundamentals, networking concepts, Python, Git/GitHub, static web publishing, Linux/WSL, desktop application testing, and practical IT support tools. Explore CCTV, PABX, and network documentation/CAD only through appropriate training and hands-on labs.",
+    "certifications": "Consider CompTIA A+ for foundational IT support, then Network+ or CCNA if networking becomes the main direction. Compare current exam objectives, local availability, preparation time, and cost before enrolling.",
+    "sixMonthGoal": "Complete the free online portfolio and evidence; publish the Museum static presentation demo and TechZone dashboard; run Buo on Windows and verify its main screens; and document all limitations honestly.",
+    "oneYearGoal": "Build a complete evidence-backed portfolio and one-page resume, publish at least one project safely, practice technical interviews, and apply for an entry-level help-desk, IT support, or technical-support role. Complete a structured foundational certification study plan.",
+    "threeYearGoal": "Develop into a dependable IT support or application-support professional with stronger Windows, networking, database, and troubleshooting skills. Continue building software and data projects and decide on a more focused specialization based on real workplace experience."
+  },
+  "reflection": {
+    "text": "My experience in the Bachelor of Science in Information Technology program has helped me understand that working in IT is not only about writing code or using software. It also involves understanding a problem, choosing an appropriate solution, checking whether that solution works, and explaining the result to other people. Before and during my studies, I was still developing my technical foundation. Through school activities and personal projects, I have become more familiar with web development, databases, data analysis, and mobile application development. I also learned that I need patience and a step-by-step approach when troubleshooting unfamiliar errors.\n\nOne important part of my learning has been developing the presentation version of Joshua's Studio House Museum, a web-based art gallery and storefront. The static demo brings together curated Graphite, Canvas, and Artisan Artifacts collections, product variants, a browser-local cart, and simulated commission requests. I worked with HTML, CSS, JavaScript, Tailwind CSS, and browser localStorage. I intentionally removed the payment and backend requirements from this presentation version because it is intended to demonstrate the interface and user flow, not accept real orders. This taught me to distinguish a front-end prototype from a production e-commerce system and to label its limitations clearly.\n\nTechZone Mobile Store strengthened my understanding of data analysis. I worked with a smartphone dataset and learned to clean the source records before calculating statistics. The original file contained appended summary rows, so the analysis retained the 15 actual smartphone records rather than treating those summary rows as products. The project brought together Python, Pandas, NumPy, Streamlit, Excel, SQL, and visualizations. I learned to explain averages, compare brands, examine price and rating relationships, and turn findings into cautious recommendations. An important lesson was to state what the data cannot prove: the dataset contains product specifications, prices, and ratings, but it does not contain real transactions or sales history. Therefore, the system supports product comparison and inventory screening, not sales forecasting.\n\nMy specialization project is Buo, a local-first fitness and strength-progress application built with Python and Kivy. The supplied source includes a local SQLite data layer, strength logging, training plans, workout timers, recovery check-ins, reminders, a private journal, analytics, and export functions. I prepared a Windows desktop setup so it can be demonstrated in its own application window without requiring an Android APK. The desktop dependencies and launcher scripts are included, and I have confirmed that the application opens on my Windows computer. I also confirmed a successful online Gemini response, while other individual tools still need additional testing. GPS route capture and the app-side Android background-tracking launcher remain incomplete, and Android-specific sensor features are outside the current desktop presentation scope.\n\nI have also encountered practical troubleshooting situations while choosing how to publish my portfolio. I learned that GitHub Pages is designed for static websites and cannot run server-side application features, so I prepared a separate HTML, CSS, and JavaScript edition that can be hosted without a paid PHP server or database. Reviewing Buo's package imports reinforced the importance of consistent filenames and module references. These examples taught me to gather evidence before changing configuration.\n\nI used AI tools as learning and development support for organizing requirements, understanding code, and preparing documentation. I still need to review AI-generated suggestions carefully, compare them with source files, and test important behavior myself. AI can make mistakes, misread a project, or suggest features that are not actually implemented. I should never publish passwords, API keys, private records, or other sensitive information when asking for technical help.\n\nI know that I still have areas to improve, particularly structured troubleshooting, networking fundamentals, secure web development, desktop runtime testing, secure deployment, and professional documentation. My immediate goal is to finish verifying my projects, organize their source code and evidence, and prepare a clear resume and portfolio. I am interested in beginning in IT support or technical support, where I can help users, learn from experienced colleagues, and develop strong operational skills. Over time, I also want to continue building software and data-related solutions. I consider myself ready to begin growing professionally because I have practical projects to discuss, a willingness to learn, and a better understanding of why testing, honesty, and continuous improvement matter in IT."
+  },
+  "certificates": [],
+  "resume": {
+    "resumeUrl": "",
+    "fileName": "",
+    "dataUrl": ""
+  },
+  "checklist": [
+    {
+      "item": "Professional email",
+      "completed": false
+    },
+    {
+      "item": "Professional photograph",
+      "completed": false
+    },
+    {
+      "item": "About Me (approximately 150–250 words)",
+      "completed": true
+    },
+    {
+      "item": "Career objective / professional statement",
+      "completed": true
+    },
+    {
+      "item": "One-page professional resume",
+      "completed": false
+    },
+    {
+      "item": "LinkedIn profile updated",
+      "completed": false
+    },
+    {
+      "item": "GitHub account and repositories",
+      "completed": false
+    },
+    {
+      "item": "Programming skills demonstrated with evidence",
+      "completed": false
+    },
+    {
+      "item": "Web development skills demonstrated with evidence",
+      "completed": false
+    },
+    {
+      "item": "Database / SQL skills demonstrated with evidence",
+      "completed": false
+    },
+    {
+      "item": "Networking skills demonstrated with evidence",
+      "completed": false
+    },
+    {
+      "item": "Cybersecurity case study completed",
+      "completed": false
+    },
+    {
+      "item": "Data-analysis skills demonstrated with evidence",
+      "completed": false
+    },
+    {
+      "item": "Cloud / deployment knowledge demonstrated",
+      "completed": false
+    },
+    {
+      "item": "AI literacy evidence and usage log completed",
+      "completed": false
+    },
+    {
+      "item": "Project 1: functional web/application project",
+      "completed": true
+    },
+    {
+      "item": "Project 2: data/database project",
+      "completed": true
+    },
+    {
+      "item": "Project 3: specialization project",
+      "completed": false
+    },
+    {
+      "item": "Source code uploaded and repositories organized",
+      "completed": false
+    },
+    {
+      "item": "Project documentation and README files completed",
+      "completed": false
+    },
+    {
+      "item": "Screenshots / diagrams included",
+      "completed": false
+    },
+    {
+      "item": "Testing documented",
+      "completed": false
+    },
+    {
+      "item": "At least one project deployed online",
+      "completed": false
+    },
+    {
+      "item": "At least five real troubleshooting cases documented",
+      "completed": false
+    },
+    {
+      "item": "Mock interview completed",
+      "completed": false
+    },
+    {
+      "item": "Technical interview preparation completed",
+      "completed": false
+    },
+    {
+      "item": "Project defense prepared",
+      "completed": false
+    },
+    {
+      "item": "Career development plan completed",
+      "completed": false
+    },
+    {
+      "item": "Final reflection (500–800 words) completed",
+      "completed": false
+    },
+    {
+      "item": "Online portfolio and offline archive organized",
+      "completed": false
+    }
+  ]
+}

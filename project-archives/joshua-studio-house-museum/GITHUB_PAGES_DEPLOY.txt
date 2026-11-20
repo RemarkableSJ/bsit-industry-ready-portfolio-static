@@ -1,0 +1,8 @@
+1. Create a separate GitHub repository, e.g. joshua-studio-house-museum.
+2. Upload the CONTENTS of this folder to the repository ROOT. index.html must be at the root.
+3. Open repository Settings -> Pages.
+4. Set Source to Deploy from a branch, select main and /(root), then Save.
+5. Open the published URL after GitHub Pages reports it is ready.
+6. Test showroom carousels, collection filters, product variants, cart demo, and commission demo.
+
+This is a static presentation demo. No backend, real order, payment, admin dashboard, or fulfilment is included. Tailwind, Lucide, and font resources are loaded from CDNs, so the page needs an internet connection for those assets.

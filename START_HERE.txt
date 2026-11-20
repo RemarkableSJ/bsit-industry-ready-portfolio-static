@@ -1,0 +1,9 @@
+START HERE — FREE STATIC PORTFOLIO
+
+1. Open README.md.
+2. Publish this folder's contents to a public GitHub repository.
+3. Enable GitHub Pages from Settings → Pages → Deploy from a branch → main → /(root).
+4. Wait for the live URL.
+5. Test index.html, project.html?id=0/1/2, defense.html, editing.html, theme toggle, and evidence downloads.
+
+No PHP, MySQL, paid hosting, or server setup is required for this static edition.

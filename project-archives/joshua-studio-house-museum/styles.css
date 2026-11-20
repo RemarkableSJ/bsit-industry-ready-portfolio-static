@@ -1,0 +1,121 @@
+:root {
+            --museum-black: #121212;
+            --museum-gold: #c2a382;
+            --placard-bg: #fdfbf7;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7;
+            color: #121212;
+            overflow-x: hidden;
+        }
+
+        h1, h2, .museum-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        h3, h4, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Showroom Card Styles */
+        .showroom-card {
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .showroom-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top; 
+            opacity: 0;
+            transition: opacity 0.8s ease, transform 1.2s ease;
+            transform: scale(1.1);
+            filter: grayscale(100%);
+        }
+
+        .showroom-image.active {
+            opacity: 0.6;
+            transform: scale(1);
+        }
+
+        .showroom-card:hover .showroom-image.active {
+            filter: grayscale(0%);
+            opacity: 0.8;
+        }
+
+        /* Small Navigation Paddles */
+        .mini-paddle {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            z-index: 30;
+        }
+
+        .mini-paddle:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        /* Payment Badge Styles */
+        .payment-badge {
+            border: 1px solid #e5e5e5;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .payment-badge:hover, .payment-badge.selected {
+            border-color: #c2a382;
+            background-color: #fffaf5;
+        }
+
+        /* Input Styles */
+        .museum-input {
+            width: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 0.75rem 0;
+            outline: none;
+            font-size: 0.875rem;
+            background: transparent;
+            transition: border-color 0.3s;
+        }
+        .museum-input:focus {
+            border-color: #c2a382;
+        }
+        .museum-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #a8a29e;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        @keyframes fadeInMove {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-reveal {
+            animation: fadeInMove 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+/* Presentation-only mode notices */
+.demo-mode-notice {
+    border: 1px dashed #c2a382;
+    background: #fffaf5;
+    color: #5b5147;
+    padding: 1rem;
+    text-align: center;
+    font-size: .75rem;
+    letter-spacing: .04em;
+}
