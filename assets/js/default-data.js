@@ -13,7 +13,7 @@ window.defaultPortfolio = {
     "github": "https://github.com/RemarkableSJ",
     "linkedin": "https://www.linkedin.com/in/joshua-decena-748226218/",
     "portfolioUrl": "",
-    "photoUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/images/profile-photo.png",
+    "photoUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/images/profile-photo.jpg",
     "program": "Bachelor of Science in Information Technology (BSIT)",
     "school": "Datamex College of Saint Adeline",
     "section": "",
@@ -387,8 +387,8 @@ window.defaultPortfolio = {
   },
   "certificates": [],
   "resume": {
-    "resumeUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/files/Joshua_Elevado_Decena_Resume.pdf",
-    "fileName": "Joshua_Elevado_Decena_Resume.pdf",
+    "resumeUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/assets/files/Joshua Elevado Decena - Resume.pdf",
+    "fileName": "Joshua Elevado Decena - Resume.pdf",
     "dataUrl": ""
   },
   "checklist": [
