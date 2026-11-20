@@ -90,9 +90,9 @@ window.defaultPortfolio = {
   ],
   "projects": [
     {
-      "liveDemo": "",
-      "githubUrl": "",
-      "readmeUrl": "",
+      "liveDemo": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/project-archives/joshua-studio-house-museum/",
+      "githubUrl": "https://github.com/RemarkableSJ/bsit-industry-ready-portfolio-static/tree/main/project-archives/joshua-studio-house-museum",
+      "readmeUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/documentation/joshua-studio-house-museum.html",
       "screenshots": "The source archive now includes the actual artwork and product photographs under project-archives/joshua-studio-house-museum/assets/images/. The project case-study page displays selected works, and the downloadable source archive includes all 17 image files used by the storefront.",
       "nonFunctionalRequirements": "Keep the presentation responsive and readable; load the included image assets with relative paths; keep demo interactions inside the current browser; and clearly label simulated checkout and commission flows so visitors do not mistake them for real transactions.",
       "existingProposedSystem": "The static presentation edition provides a curated public-facing gallery and storefront interface for browsing artwork, supplies, and commission options. It is intended to demonstrate the user experience without accepting real transactions.",
@@ -121,8 +121,8 @@ window.defaultPortfolio = {
     },
     {
       "liveDemo": "",
-      "githubUrl": "",
-      "readmeUrl": "",
+      "githubUrl": "https://github.com/RemarkableSJ/bsit-industry-ready-portfolio-static/blob/main/project-archives/TechZone_Project2_Complete_Source_Package.zip",
+      "readmeUrl": "https://github.com/RemarkableSJ/bsit-industry-ready-portfolio-static/blob/main/evidence-staging/Project2_TechZone_Final_Report.pdf",
       "screenshots": "Upload screenshots of the dashboard overview, filter controls, KPI cards, all five visualizations, Insights & Solutions, Compare tab, Data tab, Excel summary, and SQL query results.",
       "nonFunctionalRequirements": "Keep calculations reproducible; label measures and currencies clearly; make the dashboard interactive and understandable; show the data limitations; retain the original CSV separately from the cleaned data; and avoid describing correlation as causation.",
       "existingProposedSystem": "Existing approach: review the raw CSV or individual smartphone rows manually. Proposed approach: clean the dataset once and use a dashboard, notebook, workbook, and SQL scripts to compare records consistently and explain the evidence behind recommendations.",
@@ -151,8 +151,8 @@ window.defaultPortfolio = {
     },
     {
       "liveDemo": "",
-      "githubUrl": "",
-      "readmeUrl": "",
+      "githubUrl": "https://github.com/RemarkableSJ/bsit-industry-ready-portfolio-static/blob/main/project-archives/Buo_Desktop_Source.zip",
+      "readmeUrl": "https://remarkablesj.github.io/bsit-industry-ready-portfolio-static/documentation/buo-app.html",
       "screenshots": "The supplied source includes the Buo orange lightning-bolt app icon at assets/icon.png. Capture genuine Windows desktop screenshots after successfully launching Buo; no Android APK or verified Android screenshots are included in this desktop presentation package.",
       "nonFunctionalRequirements": "Protect private fitness profiles, journals, and workout records; preserve local-first usage when cloud services are not configured; keep the desktop interface usable at common Windows window sizes; and gracefully disclose or disable Android-only APIs when running on Windows.",
       "existingProposedSystem": "A user may track strength workouts, recovery notes, reminders, and personal progress using separate notes or tools. Buo consolidates strength logging, planning, recovery check-ins, reminders, records, analytics, exports, and private tracking in a local-first desktop-friendly application.",

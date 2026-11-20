@@ -344,9 +344,29 @@
       ${projects.length ? `<div class="projects-grid">${projects.map((project, index) => {
         const status = project.status || 'Planned';
         const statusClass = status.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
-        const demoLabel = /android|mobile/i.test(project.type || '') ? 'Download APK' : 'Live Demo';
+        const demoLabel = index === 0 ? 'Open Museum Demo' : '';
+
+const demoAction = safeUrl(project.liveDemo)
+    ? linkOrPlaceholder(
+        project.liveDemo,
+        demoLabel,
+        'btn btn-sm btn-primary'
+    )
+    : `<span class="link-placeholder">${
+        index === 1
+            ? 'Online dashboard not deployed yet'
+            : 'Windows desktop app · download to run'
+    }</span>`;
+
+const sourceLabel = index === 0
+    ? 'Browse Source Files'
+    : 'Download Source Package';
+
+const documentationLabel = index === 1
+    ? 'View Project Report'
+    : 'Read Documentation';
         return `<article class="project-card"><div class="project-topline"><span class="project-number">PROJECT ${String(index + 1).padStart(2, '0')}</span><span class="status-pill ${statusClass}">${escapeHtml(status)}</span></div><p class="project-type">${escapeHtml(project.type || 'IT Project')}</p><h3>${escapeHtml(project.title || 'Untitled Project')}</h3><p class="project-overview">${multiline(project.overview || 'Add a project overview.')}</p>
-          <div class="project-links"><a class="btn btn-sm btn-outline-primary" href="project.html?id=${index}">Open Case Study ↗</a>${linkOrPlaceholder(project.liveDemo, demoLabel, 'btn btn-sm btn-primary')}${linkOrPlaceholder(project.githubUrl, 'Source Code')}${linkOrPlaceholder(project.readmeUrl, 'Documentation')}</div>
+          <div class="project-links"><a class="btn btn-sm btn-outline-primary" href="project.html?id=${index}">Open Case Study ↗</a>${demoAction}${linkOrPlaceholder(project.githubUrl, sourceLabel)}${linkOrPlaceholder(project.readmeUrl, documentationLabel)}</div>
           <details class="project-details"><summary>Project details & evidence</summary><div class="details-body">
             ${detailBlock('Problem statement', project.problem)}${detailBlock('Objectives', project.objectives)}${detailBlock('Functional requirements', project.functionalRequirements)}${detailBlock('Non-functional requirements', project.nonFunctionalRequirements)}${detailBlock('Existing / proposed system', project.existingProposedSystem)}${detailBlock('Use cases / UML', project.useCases)}${detailBlock('Interface design', project.interfaceDesign)}${detailBlock('Target users', project.targetUsers)}${detailBlock('Technologies', project.technologies)}${detailBlock('Features', project.features)}${detailBlock('System architecture', project.architecture)}${detailBlock('Database design', project.databaseDesign)}${detailBlock('Screenshots / diagrams', project.screenshots)}${detailBlock('Installation / setup', project.installation)}${detailBlock('How to use', project.usage)}${detailBlock('Testing & results', project.testing)}${detailBlock('Bugs and corrections', project.bugsAndCorrections)}${detailBlock('Deployment / configuration', project.deploymentNotes)}${detailBlock('My role', project.developerRole)}${detailBlock('Limitations', project.limitations)}${detailBlock('Future improvements', project.futureImprovements)}
           </div></details></article>`;
